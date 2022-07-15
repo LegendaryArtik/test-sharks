@@ -1,0 +1,59 @@
+@import "form.scss";
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    height: 80px;
+    &-inner{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.cities-wrapper{
+    display: grid;
+    gap: 15px;
+    @media screen and (min-width: 450px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
+
+.cities-item{
+    border-radius: 0.25rem;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    &__title{
+        margin-bottom: 10px;
+    }
+    &__body{
+        padding: 1rem 1rem;
+    }
+    &__image{
+        width: 100%;
+        height: auto;
+    }
+}

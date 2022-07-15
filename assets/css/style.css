@@ -1,0 +1,107 @@
+.form {
+  color: #444;
+  display: block;
+  margin: 2rem auto;
+  position: relative;
+  width: 100%; }
+  .form-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0; }
+
+.form-input {
+  border: none;
+  color: #007491;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  margin: 0 0 2rem;
+  padding: .25rem;
+  width: 100%; }
+  .form-input:focus {
+    border-bottom: 1px solid #007491;
+    outline: none; }
+
+.form-textarea {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  color: #007491;
+  display: block;
+  height: 2rem;
+  margin: 0 0 2rem;
+  padding: .25rem;
+  width: 100%;
+  transition: 0.3s height ease; }
+  .form-textarea:focus {
+    border-bottom: 1px solid #007491;
+    height: 4rem;
+    outline: none; }
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+
+.form-label {
+  display: block;
+  line-height: 14px;
+  margin: 0 0 1rem; }
+
+.btn-submit {
+  background: transparent;
+  border: 1px solid #aaa;
+  padding: 10px 20px;
+  transition: .3s all ease-in-out; }
+  .btn-submit:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid #007491;
+    outline: none;
+    background: #007491; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+.header {
+  display: flex;
+  align-items: center;
+  background: #ddd;
+  height: 80px; }
+  .header-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; }
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0; }
+
+.cities-wrapper {
+  display: grid;
+  gap: 15px; }
+  @media screen and (min-width: 450px) {
+    .cities-wrapper {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 1024px) {
+    .cities-wrapper {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.cities-item {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125); }
+  .cities-item__title {
+    margin-bottom: 10px; }
+  .cities-item__body {
+    padding: 1rem 1rem; }
+  .cities-item__image {
+    width: 100%;
+    height: auto; }
